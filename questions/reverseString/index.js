@@ -18,3 +18,33 @@ const reverseString = (str) => {
 };
 
 module.exports = reverseString;
+
+/* other ways to solve
+const reverseString = (str) => {
+    let reversed = '';
+
+    for (let char of str) {
+        reversed = char + reversed;
+    }
+
+    return reversed;
+}
+----- second way
+
+const reverseString = (str) => {
+    const arr = str.split('');
+    const reversedArr = arr.reverse();
+
+    return reversedArr.join('');
+}
+
+or just return str.split('').reverse().join('');
+
+---------third way
+
+const reverseString = (str) => {
+    return [...str].reduce((acc, curr) => curr + acc).join('');
+
+}
+*/
+
