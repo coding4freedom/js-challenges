@@ -17,3 +17,12 @@ const palindrome = (str) => {
 };
 
 module.exports = palindrome;
+
+/*
+const palindrome = (str) => {
+  return [...str].every((char, index) => (
+    char === str.[str.length - 1 - index]  
+  ))
+};
+
+*/
