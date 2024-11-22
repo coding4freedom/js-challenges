@@ -1,4 +1,4 @@
-# Getting Started with FES-DSA
+# how to get started
 
 ## Available Scripts
 
