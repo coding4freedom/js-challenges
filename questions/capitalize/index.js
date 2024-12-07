@@ -8,7 +8,16 @@
  */
 
 const capitalize = (str) => {
-  
+    const words = [...str.split(' ')];
+    const finalWords = [];
+    
+    for (let word of words) {
+        const newWord = word.substring().replace(word[0], word[0].toUpperCase());
+        
+        finalWords.push(newWord);
+    }
+    
+    return finalWords.join(' ');
 };
 
 module.exports = capitalize;
