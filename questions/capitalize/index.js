@@ -9,7 +9,7 @@
 
 const capitalize = (str) => {
     const words = [...str.split(' ')];
-    const finalWords = [];
+    const finalWords = []; 
     
     for (let word of words) {
         const newWord = word.substring().replace(word[0], word[0].toUpperCase());
