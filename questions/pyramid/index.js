@@ -18,7 +18,21 @@
  */
 
 const pyramid = (n) => {
-  
+    let alg = (n + n) - 1;
+    let mid = Math.floor(alg / 2);
+    
+    
+    for ( let row = 0; row < n; ++row) {
+        let step = '';
+        for (let col = 0; col < alg; ++col) {
+            if (col >= mid - row && col <= mid + row) {
+                step += "#";
+            } else {
+                step += " ";
+            }
+        }
+        console.log(step)
+    }
 };
 
 module.exports = pyramid;
